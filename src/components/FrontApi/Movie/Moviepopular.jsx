@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getPopularMovies } from "../../../Api/moviesApi";
-import ModalMedia from "./ModalMedia";
+import ModalMedia from "../Modals/ModalMedia";
 
 export default function MoviePopular() {
     const [movies, setMovies] = useState([]);

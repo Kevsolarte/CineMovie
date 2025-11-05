@@ -3,6 +3,8 @@ import Footer from '../components/layout/Footer';
 import MoviePopular from '../components/FrontApi/Movie/Moviepopular';
 import TvPopular from '../components/FrontApi/TV/TvPopular';
 import RatedMovie from '../components/FrontApi/Movie/RatedMovie';
+import { Link, useNavigate } from "react-router-dom";
+
 
 function App() {
   return (
@@ -36,7 +38,7 @@ function App() {
               <span className="border-b-4  pb-2">Películas Populares</span>
             </h2>
             <a href="#" className="text-gray-400 hover:text-white text-sm md:text-base transition-colors">
-              Ver todas →
+              <Link to="/movies" className="text-white hover:text-gray-200">Ver todas →</Link>
             </a>
           </div>
           <MoviePopular />
@@ -48,7 +50,7 @@ function App() {
               <span className="border-b-4 pb-2">TV Series Populares</span>
             </h2>
             <a href="#" className="text-gray-400 hover:text-white text-sm md:text-base transition-colors">
-              Ver todas →
+              <Link to="/tv" className="text-white hover:text-gray-200">Ver todas →</Link>
             </a>
           </div>
           <TvPopular />
@@ -60,21 +62,13 @@ function App() {
               <span className="border-b-4  pb-2">Top Rated Movies</span>
             </h2>
             <a href="#" className="text-gray-400 hover:text-white text-sm md:text-base transition-colors">
-              Ver todas →
+               <Link to="/movies" className="text-white hover:text-gray-200">Ver todas →</Link>
+              
             </a>
           </div>
           <RatedMovie />
         </section>
 
-        <section className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-8 mb-16 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">¿Buscas algo específico?</h3>
-          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Descubre miles de títulos, crea listas personalizadas y recibe recomendaciones exclusivas.
-          </p>
-          <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all transform hover:scale-105">
-            Registrarse gratis
-          </button>
-        </section>
       </main>
      
 

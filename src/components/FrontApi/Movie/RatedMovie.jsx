@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getRatedMovies } from "../../../Api/ratedApi";
-import ModalMedia from "../../FrontApi/Movie/ModalMedia";
+import ModalMedia from "../Modals/ModalMedia";
 
 export default function RatedMovie() {
     const [movies, setMovies] = useState([]);

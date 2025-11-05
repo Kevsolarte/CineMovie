@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { gettvpopular } from "../../../Api/tvApi";
-import ModalMedia from "../../../components/FrontApi/Movie/ModalMedia";
+import ModalMedia from "../Modals/ModalMedia";
 export default function TvPopular() {
     const [tvshows, setTvshows] = useState([]);
     const [page, setPage] = useState(1);
