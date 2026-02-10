@@ -3,7 +3,7 @@ import Footer from '../components/layout/Footer';
 import MoviePopular from '../components/FrontApi/Movie/Moviepopular';
 import TvPopular from '../components/FrontApi/TV/TvPopular';
 import RatedMovie from '../components/FrontApi/Movie/RatedMovie';
-import { Link, useNavigate } from "react-router-dom";
+import { Link, } from "react-router-dom";
 
 
 function App() {
@@ -62,19 +62,16 @@ function App() {
               <span className="border-b-4  pb-2">Top Rated Movies</span>
             </h2>
             <a href="#" className="text-gray-400 hover:text-white text-sm md:text-base transition-colors">
-               <Link to="/movies" className="text-white hover:text-gray-200">Ver todas →</Link>
-              
+              <Link to="/movies" className="text-white hover:text-gray-200">Ver todas →</Link>
+
             </a>
           </div>
           <RatedMovie />
         </section>
-
       </main>
-     
-
-      {/* <Footer /> */}
     </>
   );
 }
+
 
 export default App;

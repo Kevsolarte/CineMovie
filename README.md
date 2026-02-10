@@ -1,12 +1,52 @@
-# React + Vite
+# 🎬 CineMovie!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**CineMovie!** es una plataforma moderna para explorar las películas y series de televisión más populares, desarrollada con las últimas tecnologías en el ecosistema de React. Este proyecto fue diseñado pensando en el rendimiento, la escalabilidad y una experiencia de usuario (UX) premium.
 
-Currently, two official plugins are available:
+## ✨ Características Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Exploración de Contenido**: Listado infinito de películas y series de televisión populares.
+- **Búsqueda Inteligente**: buscador en tiempo real con debounce integrado en el encabezado.
+- **Filtrado Avanzado**: Filtra resultados por género, año de lanzamiento y múltiples opciones de ordenamiento.
+- **UX Premium**:
+  - **Skeleton Loaders**: Estados de carga elegantes para una percepción de velocidad mejorada.
+  - **Infinite Scroll**: Navegación fluida sin interrupciones por paginación tradicional.
+  - **Backdrop Blur & Glassmorphism**: Diseño moderno siguiendo las últimas tendencias estéticas.
+- **Arquitectura Modular**: Uso de **Custom Hooks** genéricos (`useMedia`) para centralizar la lógica de estado y efectos.
+- **Seguridad**: Gestión de API Keys mediante variables de entorno protegidas.
 
-## Expanding the ESLint configuration
+## 🛠️ Stack Tecnológico
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 19, Vite 6
+- **Estilos**: Tailwind CSS 4
+- **Iconos**: React Icons (Fa, Hi)
+- **Animaciones**: Swiper, AOS
+- **API**: [The Movie Database (TMDB) API](https://www.themoviedb.org/documentation/api)
+
+## 📦 Instalación y Configuración
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/cinemovie.git
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Configura las variables de entorno:
+   Crea un archivo `.env` en la raíz con lo siguiente:
+   ```env
+   VITE_TMDB_API_KEY=tu_api_key
+   VITE_TMDB_BASE_URL=https://api.themoviedb.org/3
+   VITE_TMDB_TOKEN=tu_bearer_token
+   ```
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+## 📸 Screenshots
+
+*(Espacio reservado para tus capturas de pantalla de la Home, Películas y Series)*
+
+---
+Desarrollado con ❤️ para mi portafolio de LinkedIn.

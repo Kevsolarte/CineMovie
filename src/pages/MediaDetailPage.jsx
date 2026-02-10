@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams,  } from 'react-router-dom';
 import { getMediaDetails, getMediaReviews } from '../Api/mediaApi';
 import { formatCurrency, formatRuntime } from '../utils/formatUtils';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,7 +11,7 @@ import MediaTrailers from '../components/FrontApi/Modals/MediaTrailers';
 
 const MediaDetailPage = () => {
   const { type, id } = useParams();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [media, setMedia] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
